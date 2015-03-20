@@ -1,44 +1,39 @@
-/**
- * 
- *
- * @author Oswaldo Manuel Rios Flores / Alejandro Amaro Montes / Jesus Manuel
- * Garcia Rico
- * @since 19/03/2015
- * @version 1.0
- *
- */
+
 package mx.uach.compiladores.proyecto;
 
-
+/**
+ * @author Oswaldo Manuel Rios Flores / Alejandro Amaro Montes / Jesus Manuel
+ * Garcia Rico
+ * @since 14/03/2015
+ * @version 1.0
+ */
 public class Token {
     
      /**
-     * tipos de variables  token.
+     * Tipos de datos para el tokens.
      *
-     * @version 1.0
-     * @since 11/03/15
      */
-    public class Tipo
+    public class Type
     {
-        public static final int FARCHIVO = '.';
+        public static final int FINARCH = '.';
         public static final int FIN = ';';
-        public static final int ADJUN = '&';
-        public static final int CONCAT = '|';
+        public static final int ADIC = '&';
+        public static final int CONJ = '|';
         public static final int LLAVEDER = '}';
         public static final int LLAVEIZQ = '{';
-        public static final int CORCHETEDER = ']';
-        public static final int CORCHETEIZQ = '[';
-        public static final int PARENTESISDER = ')';
-        public static final int PARENTESISIZQ = '(';
-        public static final int DEFINICION = 900;
-        public static final int TERMINO = 901;
-        public static final int VARIABLE = 902;
+        public static final int CORDER = ']';
+        public static final int CORIZQ = '[';
+        public static final int PARDER = ')';
+        public static final int PARIZQ = '(';
+        public static final int DEF = 800;
+        public static final int TERMINO = 801;
+        public static final int VARIABLE = 802;
     }
 
     private int tipo;
     private String datos;
 
-    Token(int type, String data)
+    Token(int tipo, String datos)
     {
         this.tipo = tipo;
         this.datos = datos;
@@ -59,7 +54,7 @@ public class Token {
         return this.datos;
     }
 
-    public void setDatos(String datos)
+    public void setData(String datos)
     {
         this.datos = datos;
     }
