@@ -13,7 +13,7 @@ package mx.uach.compiladores.proyecto;
 public class Token {
     
      /**
-     * tipos de variables del token.
+     * tipos de variables  token.
      *
      * @version 1.0
      * @since 11/03/15
